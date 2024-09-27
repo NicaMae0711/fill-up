@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill up Form</title>  <!-- Title in the tab -->
+    <link rel="stylesheet" href="style.css">  <!-- Link for style.css -->
+</head>
+<body>
+    <h1> Fill up Form </h1> <!-- Main heading -->
+     <!-- Fill up Form -->
+    <form action="#" id="Form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="email">Email:</label> 
+        <input type="email" id="email" name="email" required> 
+        
+        <input type="submit" value="Submit"> <!--Submit Form-->
+    </form> <!--End of the Form -->
+
+     <!-- Hidden notification message -->
+     <div id="notification" style="display: none; color: rgb(5, 10, 5); margin-top: 20px;">
+        Data successfully saved!
+    </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+     <script src="/database.js"></script>
+</body>
+</html>
